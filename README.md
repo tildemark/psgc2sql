@@ -1,6 +1,6 @@
 # PSGC to SQL Generator and Data Exporter for Philippine Administrative Divisions
 
-This repository provides Python and PHP scripts to generate SQL INSERT statements for Philippine administrative divisions from the Philippine Standard Geographic Code (PSGC) data. It also includes a script to extract data from the generated SQL database and export it in various formats.
+This repository provides Python and PHP scripts to generate SQL INSERT statements for Philippine administrative divisions from the Philippine Standard Geographic Code (PSGC) data. It also includes scripts to extract data from the generated SQL database and export it in various formats.
 
 Easily create and manage SQL databases with lists of provinces, cities, municipalities, and barangays in the Philippines.
 
@@ -12,6 +12,7 @@ Easily create and manage SQL databases with lists of provinces, cities, municipa
 *   **`xlsx_to_csv.py`:** Python script to convert the PSGC Excel (.xlsx) file to CSV format.
 *   **`psgc_to_sql.php`:** PHP script to generate SQL INSERT statements for provinces, cities, municipalities, and barangays.
 *   **`extract_data.py`:** Python script to extract data from the SQL database and export it in SQL, CSV, JSON, and XML formats.
+*   **`extract_data.php`:** PHP script to extract data from the SQL database and export it in SQL, CSV, JSON, and XML formats.
 
 ## Usage
 
@@ -28,8 +29,10 @@ Easily create and manage SQL databases with lists of provinces, cities, municipa
 
 ### Extracting Data from the Database
 
-1.  **Configure Database Connection:** Update the `db_config` dictionary in `extract_data.py` with your database credentials.
-2.  **Run the Script:** Execute `extract_data.py` to extract data from the specified tables and export it in SQL, CSV, JSON, and XML formats.
+1.  **Configure Database Connection:** 
+    * Update the `db_config` dictionary in `extract_data.py` (Python) or `$dbConfig` array in `extract_data.php` (PHP) with your database credentials.
+2.  **Run the Script:** 
+    * Execute `extract_data.py` (Python) or `extract_data.php` (PHP) to extract data from the specified tables and export it in SQL, CSV, JSON, and XML formats.
 
 ## Contents
 
@@ -41,7 +44,7 @@ Easily create and manage SQL databases with lists of provinces, cities, municipa
 *   Python 3.6 or higher
 *   `openpyxl` library (install using `pip install openpyxl`)
 *   `mysql.connector` library (install using `pip install mysql-connector-python`)
-*   PHP 7.0 or higher
+*   PHP 7.0 or higher with PDO extension enabled
 
 ## Contributing
 
@@ -49,4 +52,4 @@ Contributions are welcome! Feel free to open issues or pull requests.
 
 ## License
 
-[Choose a license (e.g., MIT License)](https://choosealicense.com/)
+[[MIT License](https://github.com/tildemark/psgc2sql?tab=MIT-1-ov-file)]
