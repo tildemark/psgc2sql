@@ -30,7 +30,7 @@ Easily create and manage SQL databases with lists of provinces, cities, municipa
 ### Extracting Data from the Database
 
 1.  **Configure Database Connection:** 
-    * Update the `db_config` dictionary in `extract_data.py` (Python) or `$dbConfig` array in `extract_data.php` (PHP) with your database credentials.
+    * **Important:** Update the `db_config` dictionary in `extract_data.py` (Python) or `$dbConfig` array in `extract_data.php` (PHP) with your actual database credentials.
 2.  **Run the Script:** 
     * Execute `extract_data.py` (Python) or `extract_data.php` (PHP) to extract data from the specified tables and export it in SQL, CSV, JSON, and XML formats.
 
